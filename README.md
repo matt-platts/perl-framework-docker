@@ -11,7 +11,7 @@ After cloning this repo, run the following to pull down the submodules:
 
 Once the submodules are updated, run these commands:
 
-- cd test_environment/scripts
+- cd scripts
 - ./build
 - ./run
 
