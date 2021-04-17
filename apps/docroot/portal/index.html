@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demo Portal</title>
+
+  <link rel="stylesheet" href="jqueryui/jquery-ui.css">
+  <link rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+  <link rel="stylesheet" href="css/portal.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <script src="js/jquery-ui-tabs.js"></script>
+  <script src="js/jquery-ui-dialog.js"></script>
+
+  <script src="js/config.js"></script>
+  <script src="js/pageLoader.js"></script>
+  <script src="js/login.js"></script>
+  <script src="js/library.js"></script>
+  <script src="js/portal.js"></script>
+  <script src="js/css_load.js"></script>
+
+</head>
+<body>
+ 
+	<header style="height:50px; padding-top:10px;">
+
+		<div style="float:left">
+			<img src="/np-portal/images/broadcom-logo.png" style="border-radius:8px; margin-left:6px; height:25px;">
+			<div style="position:relative; top:-30px; left:165px;">
+				<span style="color:white; position:relative; top:-5px; left:3px;">PERL FRAMEWORK DEMO</span>
+			</div>
+	<!--
+				<button id="add_tab">Login</button>
+	//-->
+		<div id="login_info"></div>
+		<div id="login_message"><a class='doLogin' style='color:#fff'>Please log in</a></div>
+		</div>
+		<form id ="searchform" name="searchform" style="float:right" onSubmit="return false">
+			Search Assets: <input type="text" name="searchfor" id="searchfor" placeholder="Enter serial number" style="padding:5px"/> <button id="searchbutton">Go</button>
+		</form>
+	</header>
+
+<menu id="menu">
+		<!--Go to:
+
+ <a class="header_menu_item" rel="examples" href="Javascript:void(0)">Examples 1</a> |
+ 30                 <a class="header_menu_item" rel="examples2" href="Javascript:void(0)">Examples 2</a> |
+ 31                 <a class="header_menu_item" rel="data_controller" href="Javascript:void(0)">Data Controller</a> |
+                <a class="header_menu_item" rel="../portal-api/search/history/" href="Javascript:void(0)">Search history</a>
+//-->
+
+</menu>
+
+
+</div>
+
+
+<!-- Dialog popup for login //-->
+<div id="login" title="Please Log In" style="width:430px !important; display:none;">
+  <form id="loginForm" name="loginForm">
+    <fieldset class="ui-helper-reset">
+      <label for="username">Email address</label>
+      <input type="text" name="username" id="username" class="ui-widget-content ui-corner-all">
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" class="ui-widget-content ui-corner-all" />
+	<div id="loginSpacer" style="width:100%; margin:0px auto; text-align:center; height:20px; min-height:20px; padding-top:9px;"></div>
+    </fieldset>
+  </form>
+</div>
+
+<!-- Dialog for alert messages //-->
+<div id="alertBox" title="Alert">
+  <p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the &apos;x&apos; icon.</p>
+</div>
+ 
+<div id="tabs" class="mytabs" style="display:none; width:96%; margin:0px auto; ">
+  <ul>
+  </ul>
+
+
+</div>
+
+<div id="intro">
+		<p> Welcome to the demo portal.</p>
+		<p>Use the search field above to find a complete overview of any appliance by it's serial number.</p>
+		<p>For help please email <a href="mailto:mattplatts@gmail.com">mattplatts@gmail.com</a></p>
+</div>
+ 
+<footer>
+&nbsp;&copy; Matt Platts 2021. &nbsp;
+<a style='color:#f1f1f1; text-decoration:none;' href="mailto:mattplatts@gmail.com">mattplatts@gmail.com</a> &nbsp;
+<span style='float:right'>
+        Theme:
+        <select name='themeselect' id='themeselect' onChange='themeSelect(this.value)'>
+        <option value='Plain'>Plain</option>
+        <option value='Black'>Black</option>
+        <option value='Tech'>Tech</option>
+        <option value='Bright' selected="selected">Bright</option>
+        </select> &nbsp;
+</span>
+
+</footer>
+
+</body>
+</html>

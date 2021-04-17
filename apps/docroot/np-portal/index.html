@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+<title>Demo portal for framework</title>
+
+<!-- Local css //-->
+<link rel="stylesheet" type="text/css" href="css/portal.css">
+
+<!-- Ext js links //-->
+<!--
+<link rel="stylesheet" type="text/css" href="/js/libs/extjs/resources/css/ext-all-gray.css">
+<script type="text/javascript" src="/js/libs/extjs/ext-debug.js"></script>
+//-->
+<link rel="stylesheet" type="text/css" href="/ext/ext-4.2.1.883/resources/css/ext-all-gray.css">
+<script type="text/javascript" src="/ext/ext-4.2.1.883/ext-debug.js"></script>
+
+<script type="text/javascript" src="js/matt_ext_tabs.js"></script>
+<script type="text/javascript" src="js/matt_ext_window.js"></script>
+<!-- Jquery - No CDN used for security reasons //-->
+<script src="js/jquery.min.js"></script>
+
+<script src="js/css_load.js"></script>
+</head>
+<body>
+
+<header>
+
+	<form id='searchForm' name='searchForm' action='' method='' onkeypress="if (event.keyCode==13){ validateSearchForm(); return false;} else { return event.keyCode != 13;}"> 
+		<label for="search">Search:</label> <input type="text" name="search" id="search" placeholder="Enter seearch text"/>
+	</form>
+	<br />
+	<br />
+	<menu id="menu">
+	<!--
+	//-->
+	
+	</menu>
+
+
+	<div id='header-bar' style='padding-top:8px'><!-- 1f3b62 //-->
+		<img src="images/paragon_dgray.jpg" style="border-radius:8px; margin-left:11px; height:25px;">
+		<div id="header-bar-right" style="position:absolute; top:5px; left:165px;">
+			<span style="color:white; position:relative; top:-42px; left:3px;">Demo front end</span>
+		</div>
+	</div>
+
+	<h1></h1>
+	<div class="login_info" id="login_info"></div>
+
+</header>
+
+<div id="main" style="display:none">
+
+	<div style="border-radius:15px; background-color:white; opacity:0.9; margin:0px auto; width:50%; margin-top:50px;" class="introtext">
+		<div class="introtext" style="width:95%; text-align:center; padding:15px;">
+			<p class="introtext">Welcome to the demo front end for the Perl Framework.</p>
+			<p class="introtext">Use the search field above or click the tabs to demo the framework.</p>
+			<p class="introtext">For help please email <a href="mailto:mattplatts@gmail.com">mattplatts@gmail.com</a></p>
+		</div>
+	</div>
+
+	<div id="tabs" style="width:100%; height:100%; min-width:1000px; display:none;"></div>
+	<div id="addButtonCt"></div>
+</div>
+
+<div id="loading" style="width:100%; text-align:center; margin-top:200px;">
+	<div style="border:0px green solid; border-radius:8px; text-align:center; width:420px; margin:0px auto; background-color:#fff; padding:10px;">
+	Initializing demo portal front end - this may take a few moments.<br /><br />Please stand by.<br/><img style="margin:20px auto;" src="images/spinner.gif" />
+	</div>
+</div>
+
+<footer>
+&nbsp;&copy; Matt Platts 2021. &nbsp; 
+<a style='color:#f1f1f1; text-decoration:none;' href="mailto:mattplatts@gmail.com">mattplatts@gmail.com</a> &nbsp;
+<span style='float:right'>
+	Theme: 
+	<select name='themeselect' id='themeselect' onChange='themeSelect(this.value)'>
+	<option value='Plain'>Plain</option>
+	<option value='Black'>Black</option>
+	<option value='Tech'>Tech</option>
+	<option value='Bright' selected="selected">Bright</option>
+	</select> &nbsp;
+</span>
+
+</footer>
+
+<div id="overlay" style="width:100%; height:100%; position:fixed; top:0px; left:0px; background-color:#f1f1f1; opacity:0.8; display:none;"></div>
+
+</body>
+
+	<script type="text/javascript" src="js/config.js"></script> <!-- Main script which bootstraps the app //-->
+	<script type="text/javascript" src="js/library.js"></script>
+	<script type="text/javascript" src="js/portal.js"></script> <!-- Main script which runs the app //-->
+	<script type="text/javascript" src="js/matt_init.js"></script> <!-- Main script which bootstraps the app //-->
+	<script type="text/javascript" src="js/login-timeout.js"></script> <!-- request new login if idle for an hour //-->
+	<!--<div id="SecondsUntilExpire">expire time</div>//-->
+<link rel="stylesheet" type="text/css" href="css/userstyle-Bright.css">
+</html>

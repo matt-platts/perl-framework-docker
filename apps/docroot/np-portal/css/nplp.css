@@ -1,0 +1,409 @@
+.x-border-box, .x-border-box * {
+    box-sizing: border-box;
+}
+
+body {margin:0; padding:0; font-family:tahoma, arial, verdana, helvetica;}
+
+header {
+	height:85px; /* previous 40px until I added ext.js styles */
+	box-sizing:border-box; /* Ext js uses this box-sizing model, I'm declaring it here to stop the element resizing as css files load in order */
+	max-height:85px;
+	overflow:hidden;
+	background-color:#222;
+	padding:25px 15px 0px 15px;
+}
+
+header::after {
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+#header-bar {
+	height:30px;
+	background-color:#333;
+	position:relative;
+	left:-14px;
+	z-Index:0;	
+	padding-top:8px;
+	width:102%;
+
+}
+
+
+#header-bar-right {
+	position:absolute;
+	top:5px;
+	left:165px;
+}
+
+#logoutlink {
+	font-size:9px;
+}
+
+header img {
+	float:left;
+	position:relative;
+	top:-50px;
+}
+
+header form {
+	margin-top:-10px;
+}
+
+header h1 {
+	color:#fff;
+	float:left;
+	clear:both;
+	display:inline-block;
+	margin-top:8px;
+	margin-left:0px;
+	font-size:12px !important; /* Did specify this in ems originally, however ext.js css does something weird so setting it to px now */
+	position:relative;
+	top:-46px;
+}
+
+#login_info {
+	float:left; color:white;
+	position:relative;
+	top:-32px;
+	left:6px;
+	margin-left:-11px;
+	cursor:pointer;
+
+}
+
+header form {
+	float:right;
+	display:block;
+	color:#fff;
+}
+
+header form input { 
+	border-radius:4px;
+	background-color:#fff;
+	color:#1F3B62;
+	line-height:1.4em; 
+	width:142px;
+	}
+
+header menu {
+	float:right;
+	clear:left;
+	color:#ccc;
+	position:relative;
+	top:-5px;
+	z-Index:5;
+}
+
+header menu a {
+	font-weight:bold;
+	color:#fff;
+	text-decoration:none;
+	background-color:transparent;
+	border-radius:6px;
+	padding:1px 6px;
+}
+header menu a:hover {
+	background-color:#fdba31;
+	background-color:#a00;
+	color:#1b2c76;
+	color:#ffffff;
+}
+
+.x-btn-inner {
+	color:#a00;
+}
+
+
+#main {
+	margin:15px;
+}
+
+#main a {
+	color:#1b2c67;
+}
+
+.entitlements_loader {
+	position:relative;
+	left:100px;
+}
+
+.errormsg {
+	color: #cc0000;
+}
+
+.component_infoblock{
+	background-color:#d1d1d1; 
+	padding:10px; 
+	display:inline-block;
+	border-radius:5px;
+	border:1px #c1c1c1 solid;
+}
+
+#loading {
+}
+
+#loginForm {
+	width:100%;
+	margin:0px auto;
+	text-align:center;
+	margin-top:22px;
+}
+
+#loginForm label {
+	font-size:12px;
+}
+#loginForm input {
+	font-size:12px;
+	height:inherit;
+}
+
+.error {
+	color:#cc0000;
+}
+.notice {
+	color:#ff8c00;
+}
+.success {
+	color:#006400;
+}
+
+a.showAssetData {
+	cursor:pointer; margin-top:10px; clear:both; text-decoration:none; color:#1b2c68; font-weight:normal;
+	display:inline-block;
+}
+
+.ext-mb-error {
+	background-image:url(/ext/ext-4.2.1.883/resources/themes/images/default/shared/icon-error.gif);
+	width:32px !important;
+	height:32px !important;
+}
+
+#latest_searches_div {
+	/*border:1px gray solid;
+	background-color:#f1f1f1;*/
+	border-radius:10px;
+	width:100%;
+	height:330px;
+	padding:10px;
+}
+
+#login_message {
+	font-size:0.6em;
+	position:relative;
+	top:-10px;
+	line-height:0px;
+	color:red;
+	text-align:center;
+	width:100%;
+	display:none;
+}
+
+/**************** other html pages ***************/
+#license_swap_form label {
+	width:140px;
+	display:inline-block;
+	text-align:left;
+}
+
+#component_form label {
+	width:100px;
+	display:inline-block;
+}
+
+.add_note {
+	color:blue;
+	margin-left:8px;
+	position:relative;
+	top:-50px;
+	float:right;
+	padding:5px;
+	cursor:pointer;
+	margin-right:-25px;
+}
+.add_note::before {
+}
+
+.is_note {
+	color:#66a;
+	margin-left:8px;
+	margin-right:10px;
+	position:relative;
+	top:-50px;
+	float:right;
+	border:1px #1b2c67 solid;
+	border-radius:3px;
+	padding:5px;
+	max-width:400px;
+	cursor:pointer;
+	margin-right:-25px;
+
+}
+.is_note::before {
+	content: "Note: ";
+	color:#1b2c67;
+}
+
+.clearNote {
+	float:right;
+	font-weight:bold;
+	color:#1b2c69;
+	margin-left:20px;
+	cursor:pointer;
+}
+
+#subsc_to_appliance_form ul li {
+	list-style-type:none;
+}
+
+.view_raw_data {
+	margin:0px auto;
+	text-align:center;
+	text-decoration:underline;
+	color:purple;
+	cursor:pointer;
+	font-size:10px;
+}
+
+h4 {
+	position:relative;
+	top:-8px;
+	font-weight:normal;
+}
+
+.reloadTab {
+	background-color:none;
+	color:#66a !important;
+	border-radius:3px;
+	position:relative;
+	top:-48px;
+	font-size:2.2em;
+	padding-left:4px;
+	padding-right:4px;
+	padding-top:0px !important;
+	padding-bottom:8px;
+	display:inline-block;
+	cursor:pointer;
+	border:1px gray solid; 
+	line-height:12px; 
+	background-color:#f1f1f1; 
+}
+
+.nptools_input {
+	border-radius:5px;
+	box-shadow:0;
+	border:0;
+}
+
+.introtext {
+	font-family:verdana,arial,helvetica;
+	font-size:14px;
+}
+
+.introtext2 {
+	font-family:verdana,arial,helvetica;
+	font-size:13px;
+}
+.introtext2 a {
+	color:#a00 !important;
+}
+.searchlink {
+	color:#a00 !important;
+}
+.searchnote {
+	color:#66a; font-size:12px;
+}
+
+.infoblock {
+	color:#222;
+	float:right;
+	clear:both;
+	padding:10px;
+	border:0px #c1c1c1 solid;
+	border-radius:5px;
+	position:relative;
+	top:-50px;
+	background-color:#222;
+	position:relative;
+}
+
+footer {
+	position:absolute;
+	bottom:0px;
+	height:24px;
+	background-color:#333;
+	color:#fff;
+	padding-left:0px;
+	padding-right:0px;
+	padding-top:2px;
+	width:100%;
+}
+
+x-form-text {
+	min-width:320px; // text field for adding note
+}
+
+/* FRS SA ADD FORM */
+
+	#addLink { cursor:pointer; }
+
+	#addKey input.addField {
+		float:left;
+		margin-left:9px;
+		width:350px;
+		margin-bottom:5px;
+	}
+	#addKey label {
+		clear:both;
+		width:200px;
+		float:left;
+		text-align:right;
+		padding-top:4px;
+	}
+	/*
+	#addKey label:after {
+		content: ": ";
+	}
+	.noColon:after {
+		content: ". ";
+	}
+	*/
+	#addKey {
+		margin:5px;
+		padding:5px;
+		background-color:#f1f1f1;
+		margin-top:15px;
+	}
+	.addFieldButton { background-color:#1b2c67; color:white; padding:4px; width:100%; margin-left:15px; margin-top:10px; }
+
+	.labelspan {
+		float:left;
+		clear:left;
+		width:110px;
+		text-align:right;
+	}
+
+	.labelval {
+		float:left;
+		clear:none;
+		margin-left:25px;
+		text-align:left;
+	}
+
+	#frs_add_update_response {
+		padding-left:10px;
+	}
+#tabPanel {
+	height:70vh;
+}
+#tabPanel-body {
+	height:70vh;
+}
+.x-tab-inner {
+	font-weight:normal !important;
+}

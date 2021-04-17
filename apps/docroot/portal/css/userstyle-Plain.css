@@ -1,0 +1,9 @@
+header {
+	background-color:#222;
+	background-image:none;
+}
+
+header::after {
+	background-image:none;
+}
+

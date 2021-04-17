@@ -1,0 +1,6 @@
+#!/bin/bash
+docker stop perlframework
+docker stop perlframework_test_runner
+docker rm perlframework
+docker rm perlframework_test_runner
+docker network rm perlframework-net 

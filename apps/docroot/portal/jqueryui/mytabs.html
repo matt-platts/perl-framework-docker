@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Tabs - Simple manipulation</title>
+
+  <link rel="stylesheet" href="jquery-ui.css">
+  <link rel="stylesheet" href="jquery-ui.theme.css">
+  <link rel="stylesheet" href="portal.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <script src="portal.js"></script>
+
+
+</head>
+<body>
+ 
+	<header style="height:50px; padding-top:10px;">
+
+		<div style="float:left">
+<img src="" style="border-radius:8px; margin-left:6px; height:25px;">
+<div style="position:relative; top:-30px; left:165px;">
+			<img src="" style="width:92px;" width="90">
+			<span style="color:white; position:relative; top:-5px; left:3px;">Perl Framework Demo</span>
+		</div>
+	<!--
+				<button id="add_tab">Login</button>
+	//-->
+		</div>
+		<form id ="searchform" name="searchform" style="float:right" onSubmit="return false">
+			Search Assets: <input type="text" name="searchfor" id="searchfor" placeholder="Enter serial number" style="padding:9px"/> <button id="searchbutton">Go</button>
+		</form>
+	</header>
+
+<menu id="menu">Go to:
+                <!--<a class="header_menu_item" rel="Check_Component" href="Javascript:void(0)">Asset view</a> |//-->
+		<!-- <a class="header_menu_item" rel="Get_Account" href="Javascript:void(0)">Accounts</a> | //-->
+                <a class="header_menu_item" rel="Serial_Sync" href="Javascript:void(0)">Appliance sync-up (full)</a> |
+                <a class="header_menu_item" rel="Subscriptions_Sync" href="Javascript:void(0)">Single subscription sync</a> |
+                <a class="header_menu_item" rel="phs" href="Javascript:void(0)">PHS</a> |
+                <a class="header_menu_item" rel="Decode_License" href="Javascript:void(0)">Decode LKF</a> |
+                <a class="header_menu_item" rel="License_Swap" href="Javascript:void(0)">Swap Compatibility</a> |
+<a class="header_menu_item" rel="frs" href="Javascript:void(0)">FRS Credentials</a> |                <a class="header_menu_item" rel="Multiple_Search" href="Javascript:void(0)">Multiple serial search</a> |
+                <a class="header_menu_item" rel="Extract_Serials" href="Javascript:void(0)">Extract serials</a> |
+                <a class="header_menu_item" rel="../portal-api/search/history/" href="Javascript:void(0)">Search history</a>
+
+</menu>
+
+
+</div>
+<!-- Dialog popup for thingy //-->
+<div id="dialog" title="Please Log In" style="width:430px !important;">
+  <form>
+    <fieldset class="ui-helper-reset">
+      <label for="tab_title">Email address:</label>
+      <input type="text" name="tab_title" id="tab_title" class="ui-widget-content ui-corner-all">
+      <label for="tab_content">Password</label>
+      <input type="password" name="tab_content" id="tab_content" class="ui-widget-content ui-corner-all" />
+    </fieldset>
+  </form>
+</div>
+ 
+ 
+<div id="tabs" class="mytabs" style="display:none; width:96%; margin:0px auto;">
+  <ul>
+  </ul>
+
+
+</div>
+
+<div id="intro">
+		<p> Welcome to Symantec Enterprise Security Network Protection tools.</p>
+		<p>Use the search field above to find a complete overview of any appliance by it's serial number.</p>
+		<p>For help please email <a href="mailto:">ES-LicensingTeam.pdl@broadcom.com</a></p>
+</div>
+ 
+ 
+</body>
+</html>

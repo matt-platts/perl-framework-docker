@@ -1,0 +1,33 @@
+<h1>Data Controller</h1>
+<h4 style="font-weight:normal; position:relative; top:-8px">Test the data controller</h4>
+
+<div style="background-color:#f1f1f1; border-radius:5px; padding:8px;">
+<span style='font-size:12px;'><b>Search: </b></span>
+<input type="text" name="serial" id="phs_single_serial" placeholder="Enter String" />
+<button id="phs_button_single" onClick="getPhsForSerial()">Get data for search string</button>
+&nbsp; 
+&nbsp; 
+&nbsp; 
+&nbsp; 
+&nbsp; 
+&nbsp; 
+&nbsp; 
+<!--
+<span style='font-size:12px;'><b>or upload CSV:</b></span>
+<input type="file" name = "phs_csv" />
+<button id="phs_button" onClick="">Get PHS data for csv file</button>
+//-->
+</div>
+<br clear="all" />
+
+
+<div id="phs_data">
+</div>
+
+<script type="text/javascript">
+if (top.document.forms['searchForm'].elements['phs_placeholder'].value){
+	document.getElementById['phs_single_serial'].value=top.document.forms['searchForm'].elements['phs_placeholder'].value;
+	alert("eee");
+}
+</script>
+

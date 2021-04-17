@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Framework Portal Demo - Log in</title>
+
+<!-- Jquery - not from CDN for security reasons //-->
+<script src="js/jquery.min.js"></script>
+
+<!-- Local css //-->
+<link rel="stylesheet" type="text/css" href="css/nplp.css">
+</head>
+<body>
+	<form id="loginForm" name="loginForm" onkeypress="if (event.keyCode==13){ validateLoginForm(); return false;} else { return event.keyCode != 13;}">
+	<p id="login_message">Your session has timed out - please log in again to continue</p>
+	<label for="username">Username:</label> <input type="text" name="username" id="username" value="" /><br />
+	<br />
+	<label for="password">Password:</label> <input type="password" name="password" id="password" value="" autocomplete="off" />
+
+	<div id="loginSpacer" style="height:21px; padding-top:5px;"></div>
+	<input type="button" value="Log In" id="do_login" name="do_login" />
+	<input type="hidden" name="load_after_login" id="load_after_login" value="" />
+	</form>
+</body>
+
+<script type="text/javascript" src="js/config.js"></script> <!-- Main script which bootstraps the app //-->
+<script type="text/javascript" src="js/library.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+
+</html>

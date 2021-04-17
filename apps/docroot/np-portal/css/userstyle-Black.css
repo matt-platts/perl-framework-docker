@@ -1,0 +1,47 @@
+header {
+	background-color:#222;
+	background-image:none;
+}
+
+header::after {
+	background-image:none;
+}
+
+
+#tabPanel {
+	border-radius:8px;
+}
+#tabbar-1009-innerCt {
+	background-color:#333;
+	border-top-left-radius:8px;
+	border-top-right-radius:8px;
+}
+
+a.x-tab {
+	color:white !important;
+	}
+.x-tab-default-top: {
+	box-shadow: inset 0 0 0 10px lightGreen !important;
+}
+
+.x-tab-default .x-tab-inner {
+	color:#eee;
+} 
+.x-tab-inner {
+	color:#eee;
+} 
+
+#tabbar-1009-targetEl a {
+	box-shadow: inset 0 0 0 10px #222 !important;
+}
+
+#tabbar-1009-targetEl a:hover {
+	box-shadow: inset 0 0 0 10px #444 !important;
+	color:#aaa;
+}
+
+#tabbar-1009-targetEl a.x-tab-default-top-active {
+	box-shadow: inset 0 0 0 10px #000 !important;
+	color:white;
+
+}

@@ -1,0 +1,31 @@
+header {
+	background: url(../images/Broadcom-background.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+
+	background-color:transparent;
+}
+
+header::after {
+	background: url(../images/Broadcom-background-dark.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	opacity: 0.1;
+}
+
+#tabPanel {
+	border-radius:8px;
+}
+#tabbar-1009-innerCt {
+	background-color:#333;
+	border-top-left-radius:8px;
+	border-top-right-radius:8px;
+}
+
+header menu a:hover {
+        background-color:#035096 !important;
+}
+
+.x-btn-inner {
+	color: #035096 !important;
+}

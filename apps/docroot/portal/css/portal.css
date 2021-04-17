@@ -1,0 +1,128 @@
+
+  #login { width:430px !important;}
+  #login label, #login input { display:block; }
+  #login label { margin-top: 0.5em; }
+  #login input, #login textarea { width: 95%; }
+  #tabs { margin-top: 1em; }
+  #tabs li .ui-icon-close { float: left; margin: 0.4em 0.2em 0 0; cursor: pointer; }
+  #add_tab { cursor: pointer; }
+
+	#tabs {min-height:450px; height:80vh;}
+	.ui-tabs-nav { min-height:32px;}
+
+
+header {
+	background-color:#111;
+	padding:5px;
+	font-family:arial;
+	color:white;
+	border-radius:5px;
+}
+
+body {
+	font-family:arial;
+	background-color:#222;
+
+	font-size:12px; font-family:verdana,arial,helvetica; 
+	}
+
+ a {text-decoration:none; color:#1b2c68;}
+ a:hover {text-decoration:none;}
+
+
+
+#menu {
+	margin:10px auto;
+	text-align:center;
+	color:#eee;
+}
+
+menu a {
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+    border-radius: 6px;
+    padding: 1px 6px;
+}
+
+menu a:hover {
+	background-color:#035096;
+}
+
+#intro {
+	margin:0px auto;
+	background-color:#eee;
+	color:black;
+	width:600px;
+	padding:20px;
+	border-radius:5px;
+	margin-top:150px;
+}
+
+#login_info, #login_message {
+	top:-26px; position:relative; font-size:12px; padding-left:5px;
+}
+
+#login_message a {
+	color:white !important;
+}
+
+.infoblock {
+        color:#222;
+        float:right;
+        clear:both;
+        padding:10px;
+        border:0px #c1c1c1 solid;
+        border-radius:5px;
+        position:relative;
+        top:-50px;
+        background-color:#222;
+        position:relative;
+}
+
+
+.component_infoblock{
+        background-color:#d1d1d1;
+        padding:10px;
+        display:inline-block;
+        border-radius:5px;
+        border:1px #c1c1c1 solid;
+}
+
+.showAssetData {
+	clear:left;
+	border: 1px #222 solid;
+	padding: 2px;
+	margin-top: 10px;
+	border-radius: 4px;
+	clear: both;
+	display: inline-block;
+	cursor: pointer;
+	background-color: #66c;
+	color: #fff !important;
+}
+
+p.success {
+	color:green;
+}
+
+.errormsg {
+	color:#900;
+}
+footer {
+        position:absolute;
+        bottom:0px;
+        height:24px;
+        background-color:#333;
+        color:#fff;
+        padding-left:0px;
+        padding-right:0px;
+        padding-top:2px;
+        width:100%;
+}
+
+#logoutlink {
+        font-size:9px;
+}
+

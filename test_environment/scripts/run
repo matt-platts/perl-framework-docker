@@ -1,0 +1,6 @@
+#!/bin/bash
+dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+parentdir="$(dirname "$dir")"
+
+docker network create perlframework-net
+docker run -d --name perlframework --network perlframework-net --env-file $parentdir/environment_variables/PERLFRAMEWORK.env -p 80:80 -p 443:443 -p 444:444 perlframework /run-httpd.sh
