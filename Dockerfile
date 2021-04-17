@@ -23,8 +23,7 @@ EXPOSE 444/tcp
 
 ADD apps /apps
 RUN rm -fr /etc/httpd/conf/httpd.conf
-ADD apache/httpd.conf /etc/httpd/conf/httpd.conf
-#RUN rm -fr /apps/apache/NPPL/modules/* && cp /etc/httpd/modules/*  /apps/apache/NPPL/modules/ -r
+ADD conf/httpd.conf /etc/httpd/conf/httpd.conf
 
 # Permissions not being set properly on Jenkins, so force them:
 RUN chmod -R 755 /apps/docroot/portal-api
