@@ -1,8 +1,0 @@
-#!/bin/bash
-# Starts an PERLFRAMEWORK server
-dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
-parentdir="$(dirname "$dir")"
-
-# This may be necessary on a development machine
-# docker login -u $USER perlframework-docker-release-local.artifactory-ren.broadcom.net
-docker run --name perlframework --env-file $parentdir/environment_variables/PERLFRAMEWORK_production.env -p 80:8080 -p 443:443 -p 444:444 -v $parentdir/configuration/PERLFRAMEWORKCerts:/apps/apache/NPPL/cgi-bin/perlframework_pki -v $parentdir/logs/apache_logs:/apps/apache/NPPL/logs perlframework-docker-release-local.artifactory-ren.broadcom.net/perlframework:$1 /run-httpd.sh

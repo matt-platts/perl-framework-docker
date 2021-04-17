@@ -1,6 +1,0 @@
-#!/bin/bash
-dir=$(pwd)
-parentdir="$(dirname "$dir")"
-
-docker network create perlframework-net
-docker run -d --name perlframework --network perlframework-net --env-file $parentdir/environment_variables/PERLFRAMEWORK.env -p 80:8080 -p 443:443 -p 444:444 perlframework /run-httpd.sh
