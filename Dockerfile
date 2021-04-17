@@ -27,7 +27,7 @@ ADD apache/httpd.conf /etc/httpd/conf/httpd.conf
 #RUN rm -fr /apps/apache/NPPL/modules/* && cp /etc/httpd/modules/*  /apps/apache/NPPL/modules/ -r
 
 # Permissions not being set properly on Jenkins, so force them:
-RUN chmod -R 755 /apps/docroot
+RUN chmod -R 755 /apps/docroot/portal-api
 RUN chmod -R 777 /apps/docroot/portal-api/log/ && chmod -R 777 /apps/docroot/portal-api/data/
 
 # Modify /etc/rsyslog.conf to point to the proper server
