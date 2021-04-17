@@ -1,5 +1,7 @@
 # perl-framework-docker
 
+This is the perl framework repo, packaged up in docker with a front end to demo it (an old one, using EXT.js).
+
 After cloning this repo, run the following to pull down the submodules:
 
 - git submodule init
